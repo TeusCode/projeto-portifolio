@@ -61,3 +61,59 @@ nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+
+main {
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-template-columns: auto 90vw auto;
+}
+
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+section#ficha img.foto {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+section#ficha h1 {
+  color: var(--destaque);
+  margin: 15px 0px;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+div#social {
+  font-size: 1.6em;
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+div#social a {
+  color: var(--destaque);
+  transition: color 0.5s;
+}
+
+div#social a:hover {
+  color: var(--destaque-inverso);
+}
