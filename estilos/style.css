@@ -38,7 +38,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
+  position: sticky;/*Cola o menu*/
+  top:0;/*Posiciona a colagem do menu no topo*/
+  z-index: 1;/*Propriedade que indica que camada o conteúdo vai estar, (Padrão 0), números maiores serão posicionados em cima de números menores*/
 }
 
 nav#menu ul {
