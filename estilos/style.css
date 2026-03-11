@@ -263,6 +263,15 @@ article#video .video-container {
   border-radius: 8px;
 }
 
+#projetos a {
+  text-decoration: none;
+  color: var(--texto);
+}
+
+#projetos .linkProjetos:hover {
+  color: var(--destaque);
+}
+
 footer {
   background-color: var(--destaque);
   color: var(--texto-inverso);
